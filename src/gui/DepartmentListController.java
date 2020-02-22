@@ -178,7 +178,7 @@ public class DepartmentListController
 
 	private void removeEntity(Department obj) {
 		Optional<ButtonType> result = Alerts.showConfirmation("Confirmation",
-				"Are you sure you want to delete the " + obj.getName()
+				"Are you sure you want to remove " + obj.getName()
 						+ " department?");
 
 		if (result.get() == ButtonType.OK) {

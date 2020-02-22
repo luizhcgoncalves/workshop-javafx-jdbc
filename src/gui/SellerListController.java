@@ -196,8 +196,8 @@ public class SellerListController
 
 	private void removeEntity(Seller obj) {
 		Optional<ButtonType> result = Alerts.showConfirmation("Confirmation",
-				"Are you sure you want to delete the " + obj.getName()
-						+ " department?");
+				"Are you sure you want to remove " + obj.getName()
+						+ "?");
 
 		if (result.get() == ButtonType.OK) {
 			if (service == null) {
